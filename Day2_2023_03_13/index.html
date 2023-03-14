@@ -1,0 +1,112 @@
+<!-- 6교시 저번 수업에 이어서, 표를 합치기를 배웠다. -->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            /* 텍스트 깜빡임 */
+            @keyframes blink-effect { 50% { opacity: 0; } } 
+            .blink { 
+                animation: blink-effect 0.1s step-end infinite; 
+                /* 
+                    animation-name: blink-effect; 
+                    animation-duration: 1s; 
+                    animation-iteration-count:infinite; 
+                    animation-timing-function:step-end; 
+                */ 
+            }
+            </style>
+
+        <title>표 합쳐보기</title>
+    </head>
+    <body>
+     
+        <table border="2">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2">a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td rowspan="3">d</td>
+                    <td>e</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td rowspan="2">b</td>
+                    <td>c</td>
+                    <td>e</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>a</td>
+                    <td>c</td>
+                    <td>e</td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td rowspan="2" colspan="5">a</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>  
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZFj7GcFO84I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <body>
+</html>
+
+<!--
+    <img> 태그
+    웹 문서에 이미지를 삽입할 때 사용
+    <img src="path" alt="대체용 텍스트">
+
+
+
+
+
+-->
+<!-- <img src="" -->
+<img src="img/images.jpg" width="50%" alt="김다미 님" />
+<!-- ./는 생략할 수 있음 
+    상위 폴더는 .. 로 표현함
+
+    그리고 alt 같은 경우 이미지가 없을때 대처 용도로 쓰인다.
+
+    width="%50" 는 부모 기준으로 50%(반)으로 적용되는 것을 뜻한다.
+    그냥 값을 대입하면 고정이다.
+    width="50" 절대적이다. 이때 50문 픽셀 크기를 표시한다고 한다.
+
+    width나 height 중 1개만 지정해도 나머지 속성은 자동으로 비율을 계산된다.
+-->
+
+
+
+<!-- 
+    7교시
+    하이퍼링크 삽입하기 
+    <a href="링크할 주소">이름</a>
+
+    그리고 target 속성이 있다.
+    _blnak - 새로운 브라우저 윈도우 생성
+    _self - 현재윈도우
+ -->
+
+ <a href="http://www.dgsw.hs.kr" target="_blank">대구소프트웨어마이스터고등학교</a>
